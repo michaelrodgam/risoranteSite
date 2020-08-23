@@ -10,27 +10,29 @@
     
     <!--style-->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
     <link rel="stylesheet" href="./styles.css">
 
     <title>Ristorante Con Fusion</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-dark navbar-expand-sm bg-primary fixed-top">
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
         <div class="container">
             
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <a class="navbar-brand mr-auto" href="#">Risorante con Fusion</a>
+            <a class="navbar-brand mr-auto" href="index.html">Ristorante Con Fusion</a>
 
             <div class="navbar-collapse collapse" id="Navbar">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                    <li class="nav-item active"><a class="nav-link" href="#">Menu</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html"><span class="fa fa-home fa-lg"></span> Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html"><span class="fa fa-info fa-lg"></span> About</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
                 </ul>
             </div>
 
@@ -55,13 +57,27 @@
         
         <div class="container">
             
-            <div class="row row-content">
-                
-                <h2>Hi, it is not content here. Sorry! </h2>
-            
-            </div>
+            <div class="row">
 
+                <ol class="col-12 breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active">Menu</li>
+                </ol>
+                <div class="col-12">
+                    <h3>Menu</h3>
+                    <hr>
+                 </div>
+            </div>
         </div>
+
+        <div class="container">
+            <div class="row row-container">
+                <div>
+                    <h2>Hi, it is not content here. Sorry! </h2>
+                </div>
+            </div>
+        </div>
+        
 
     </main>
 
@@ -72,9 +88,9 @@
                     <h5>Links</h5>
                     <ul class="list-unstyled">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="#">Menu</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="contactus.html">Contact</a></li>
                     </ul>
                 </div>
                 <div class="col-7 col-sm-5">
@@ -83,9 +99,9 @@
 		              121, Clear Water Bay Road<br>
 		              Clear Water Bay, Kowloon<br>
 		              HONG KONG<br>
-		              Tel.: +852 1234 5678<br>
-		              Fax: +852 8765 4321<br>
-		              Email: <a href="mailto:confusion@food.net">confusion@food.net</a>
+		              <i class="fa fa-phone fa-lg"></i>+852 1234 5678<br>
+		              <i class="fa fa-fax fa-lg"></i> +852 8765 4321<br>
+		              <i class="fa fa-envelope fa-lg"></i> <a href="mailto:confusion@food.net">confusion@food.net</a>
 		           </address>
                 </div>
                 <div class="col-12 col-sm-4 align-self-center">
@@ -101,7 +117,8 @@
            </div>
            <div class="row justify-content-center">             
                 <div class="col-auto">
-                    <p>© Copyright 2018 Ristorante Con Fusion</p>
+                    <p>© Copyright 2018 Ristorante Con Fusion <br> Michael Rodriguez 2020, as part 
+                        of an online course project</p>
                 </div>
            </div>
         </div>
@@ -109,7 +126,10 @@
 
 
     <!--scripts are here?-->
-    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <!-- Local downloaded bootstrap 4-->
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
